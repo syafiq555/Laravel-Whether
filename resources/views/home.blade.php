@@ -5,8 +5,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class="text-white">Kuala Lumpur</h1>
-    <h3 class="text-white">Malaysia</h3>
+        <h1 class="text-white">Kuala Lumpur</h1>
     <section class="weathersContainer">
         <div class="card">
             <div class="card-header">
