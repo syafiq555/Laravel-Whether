@@ -15,5 +15,5 @@ Route::get('/', 'WhetherController@index');
 
 Auth::routes();
 Route::middleware('auth')->group(function() {
-    Route::get('/home', 'WhetherController@index')->name('home');
+    Route::get('/home', 'WeathersController@index')->name('home');
 });

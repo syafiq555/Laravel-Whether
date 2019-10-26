@@ -13,10 +13,13 @@ class CreateWhethersTable extends Migration
      */
     public function up()
     {
-        Schema::create('whethers', function (Blueprint $table) {
+        Schema::create('weathers', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('max_temp');
-            $table->string('min_temp');
+            $table->float('max_temp', 4, 2);
+            $table->float('min_temp', 4, 2);
+            $table->string('icon', 10);
+            $table->string('abbr', 50)->nullable();
+            $table->timestamp('created')->useCurrent();
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateWhethersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('whethers');
+        Schema::dropIfExists('weathers');
     }
 }

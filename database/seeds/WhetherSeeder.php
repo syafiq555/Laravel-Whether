@@ -1,9 +1,9 @@
 <?php
 
-use App\Whether;
+use App\Weathers;
 use Illuminate\Database\Seeder;
 
-class WhetherSeeder extends Seeder
+class WeathersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +12,7 @@ class WhetherSeeder extends Seeder
      */
     public function run()
     {
-        Whether::truncate();
-        factory(Whether::class, 24)->create();
+        Weathers::truncate();
+        factory(Weathers::class, 24)->create();
     }
 }
