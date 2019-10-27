@@ -20,6 +20,9 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/font-awesome-4.7.0/css/font-awesome.min.css') }}">
     <style>
+        html, body {
+            height: 100%;
+        }
         #app {
             height: 100%;
             background: url('{!! asset('img/background.jpeg') !!}') repeat-y center center fixed; 

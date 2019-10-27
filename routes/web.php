@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'WhetherController@index');
+Route::get('/', function() {
+    return redirect('/home');
+});
 
 Auth::routes();
 Route::middleware('auth')->group(function() {
