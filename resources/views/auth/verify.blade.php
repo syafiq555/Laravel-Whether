@@ -1,5 +1,11 @@
 @extends('layouts.app')
-
+@push('styles')
+    <style>
+        html, body {
+            height: 100vh;
+        }
+    </style>
+@endpush
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

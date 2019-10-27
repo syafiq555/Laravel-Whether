@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-@push('styles')
-@endpush
-
 @section('content')
 <div class="container">
         <h1 class="text-white">Kuala Lumpur</h1>
@@ -33,8 +30,3 @@
     </section>
 </div>
 @endsection
-
-@push('scripts')
-    <script>
-    </script>
-@endpush
