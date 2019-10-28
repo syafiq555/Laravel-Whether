@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->job(new FetchWeatherApi)->everyMinute();
+        $schedule->job(new FetchWeatherApi)->hourly();
     }
 
     /**
