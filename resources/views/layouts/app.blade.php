@@ -24,7 +24,7 @@
             height: 100%;
         } */
         #app {
-            height: 100%;
+            min-height: 100vh;
             background: url('{!! asset('img/background.jpeg') !!}') repeat-y center center fixed; 
             -webkit-background-size: cover;
             -moz-background-size: cover;
